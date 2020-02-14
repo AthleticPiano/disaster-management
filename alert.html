@@ -5,23 +5,23 @@
   <meta charset="utf-8">
   <title>ALERT</title>
   <style>
-
     body {
       background-color: #011F3F;
       color: #fff;
       text-align: center;
     }
 
-    h1{
+    h1 {
       letter-spacing: 2px;
+      margin-bottom: 100px;
     }
 
 
-    .myButton {
+    .nsButton {
       box-shadow: inset 0px 1px 0px 0px #f29c93;
       background: linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
       background-color: #fe1a00;
-      border-radius: 300px;
+      border-radius: 400px;
       border: 1px solid #d83526;
       display: inline-block;
       cursor: pointer;
@@ -29,18 +29,45 @@
       font-family: Arial;
       font-size: 40px;
       font-weight: bold;
-      padding: 90px 50px;
+      padding: 90px 15px;
       text-decoration: none;
       text-shadow: 0px 1px 0px #b23e35;
-      margin-bottom: 90px;
+      margin-bottom: 150px;
     }
 
-    .myButton:hover {
+    .nsButton:hover {
       background: linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
       background-color: #ce0100;
     }
 
-    .myButton:active {
+    .nsButton:active {
+      position: relative;
+      top: 1px;
+    }
+
+    .sButton {
+      box-shadow: inset 0px 1px 0px 0px #a4e271;
+      background: linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+      background-color: #89c403;
+      border-radius: 11px;
+      border: 3px solid #74b807;
+      display: inline-block;
+      cursor: pointer;
+      color: #ffffff;
+      font-family: Arial;
+      font-size: 40px;
+      font-weight: bold;
+      padding: 30px 70px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #528009;
+    }
+
+    .sButton:hover {
+      background: linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+      background-color: #77a809;
+    }
+
+    .sButton:active {
       position: relative;
       top: 1px;
     }
@@ -49,9 +76,11 @@
 
 <body>
 
-  <h1>Press HERE if NOT SAFE.</h1>
-  <br/>
-  <button href="#" type="submit" class="myButton">ALERT</button>
+  <h1>ALERT! Disaster nearby, reveal your status.</h1>
+  <br />
+  <button href="#" type="submit" name="not_safe" class="nsButton">NOT SAFE</button>
+  <br />
+  <button href="#" type="submit" name="safe" class="sButton">SAFE</button>
 
 </body>
 
